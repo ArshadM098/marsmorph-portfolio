@@ -1,0 +1,30 @@
+.blog{
+    padding:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: stretch;
+    backdrop-filter: brightness(20%);
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.blog div{
+    border: 2px dotted red;
+}
+
+.titlex1{
+    font-size: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: lowercase;
+    line-height:80%;
+}
+.textx1{
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* text-transform: lowercase; */
+}
+
+.inline-container{
+    display: flex;
+    flex-direction: row;
+}

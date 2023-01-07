@@ -2,7 +2,7 @@ import overlay from "../styles/Base.module.css"
 import NameText from "./nametext"
 import NavButton from "./navButtons"
 
-export default function Layout(){
+export default function Layout({children}){
     return(
         <div className={overlay.container_center}>
             <div className={overlay.container}>
@@ -12,7 +12,7 @@ export default function Layout(){
                     <NavButton label="ART" href=""></NavButton>
                     <NavButton label="MISC" href=""></NavButton>
                 </div>
-                <div className={overlay.cell2}>Cell 2</div>
+                <div className={overlay.cell2}>{children}</div>
                 <div className={overlay.cell3}>
                     <NameText someText={"Arshad"}></NameText>
                 </div>

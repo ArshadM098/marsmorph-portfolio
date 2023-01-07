@@ -57,7 +57,8 @@ return (
           fontSize="20"
           fill="#FFFFFF"
           text-anchor="middle"
-          alignment-baseline="middle">
+          // alignment-baseline="middle"
+          >
         {label}
         </text>
         </a>
