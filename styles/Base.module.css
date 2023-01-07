@@ -1,0 +1,98 @@
+.container_center{
+    
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-content: center; */
+    position:fixed;
+    padding: 30px 0px;
+    /* border: 5px inset green; */
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden ;
+    
+}
+.container{
+    display: flex;
+    flex-wrap:nowrap;
+    /* border:1px solid; */
+    /* margin:0; */
+    justify-content:center;
+    /* align-items: center; */
+    /* align-content:stretch; */
+    flex-direction: row;
+    width: auto;
+    position: relative;
+}
+
+.cell1, .cell2, .cell3{
+    position:relative;
+    width: 200px;
+    height: 900px;
+    /* border: 1px dotted white ;  */
+}    
+
+.cell1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.cell2{
+    border: 10px solid white;
+    width: 1400px;
+    background-image: url("https://p4.wallpaperbetter.com/wallpaper/266/429/254/bokeh-blurred-city-wallpaper-preview.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 0px 30px black  inset;
+}
+
+.cell3{
+    /* border: 1px inset red; */
+    display: flex;
+    
+}
+
+.bigText{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13em;
+    writing-mode: vertical-rl;
+    line-height:0.75;
+    display: block;
+    color:rgb(32, 86, 90);
+    z-index: -1;
+    text-align: center;
+    /* border: 1px inset red ; */
+    text-transform:uppercase ;
+}
+
+
+.svgStyle a path{
+    fill: rgb(30,30,30);
+    transition: fill 0.1s  ease-in-out, filter 0.1s ;
+}
+.svgStyle a:hover path{
+    fill:
+    rgb(32, 186, 190);
+    
+    /* box-shadow: 2px 2px 100px white ; */
+}
+.svgStyle a:active path{
+    /* fill:  rgb(32, 86, 90); */
+    filter:url(#inset-shadow);
+    
+}
+.svgStyle a text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+
