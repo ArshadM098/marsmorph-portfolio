@@ -93,6 +93,13 @@
     width: 500px;
 }
 
+.btn{
+    position: absolute;
+    bottom: 0px;
+    margin:10px;
+    align-self: flex-end;
+}
+
 .title2{
     position: relative;
     display: block;

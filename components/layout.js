@@ -9,7 +9,7 @@ export default function Layout({children}){
                 <div className={overlay.cell1}>
                     <NavButton label="HOME" href="/"></NavButton>
                     <NavButton label="PROJECTS" href="/projects/projectmenu"></NavButton>
-                    <NavButton label="ART" href="/"></NavButton>
+                    <NavButton label="ART" href="/projects/art"></NavButton>
                     <NavButton label="MISC" href="/"></NavButton>
                 </div>
                 <div className={overlay.cell2}>{children}</div>

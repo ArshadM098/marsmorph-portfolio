@@ -3,6 +3,8 @@ import PreviewLayout from "./previewLayout"
 import React, { useState, useEffect } from 'react';
 import { render } from "react-dom";
 import Link from 'next/link';
+import NavButton from "./navButtons";
+
 export default function Menu({allPostsData}){
     const [index, setIndex] = useState("p1");
 
@@ -27,7 +29,10 @@ export default function Menu({allPostsData}){
                 <div className={menu.preview}>
                     <PreviewLayout blog={post}></PreviewLayout>
                     <div className={menu.right}>
-                        <Link href={"blogpages/" + post.id}>Show more..</Link>
+                        <div className={menu.btn}>
+                        <NavButton label="See More..." href={"blogpages/" + post.id}></NavButton>
+                        </div>
+                        
                     </div>    
                 </div>
             </div>
