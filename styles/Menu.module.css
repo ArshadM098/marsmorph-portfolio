@@ -34,7 +34,7 @@
 }
 .list{
     /* /* z-index: 1; */
-    border: 1px inset grey;
+    border: 1px inset #808080;
     border-right: none;
     position: relative;
     width:300px;

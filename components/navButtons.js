@@ -9,7 +9,8 @@ export default function NavButton({label,href}){
   var d = "M"+ W + " " + H + "H0V" + X + "L" + X + " 0h" + W + "v" + (H-X) + "Z";
   // console.log(d)
 return (
-    <svg className={buttonStyle.svgStyle} width={W+X+5} height={H} >
+    <svg 
+     width={W+X+5} height={H} >
         <filter id='inset-shadow'>
   <feOffset
     dx='0'
@@ -50,15 +51,16 @@ return (
     in2='SourceGraphic'
   />
 </filter>
-        <Link href={href}>
+        <Link href={href} className="hover:no-underline">
         <g transform="matrix(1, 0, 0, 1, 0, 0)">
-          <path d={d}/>
+          <path className="fill-[#1e1e1e] transition-all hover:fill-[#20babe]" d={d}/>
         </g>
         <text x={W/2 + 3}
           y={H/2 + 8}
           fontSize="20"
           fill="#FFFFFF"
           textAnchor="middle"
+          className="pointer-events-none"
           // alignment-baseline="middle"
           >
         {label}

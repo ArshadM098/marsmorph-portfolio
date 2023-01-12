@@ -57,7 +57,7 @@
 
 .bigText{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 12em;
+    font-size: 13em;
     writing-mode: vertical-rl;
     line-height:0.75;
     display: block;
@@ -70,12 +70,12 @@
 
 
 .svgStyle a path{
-    fill: rgb(30,30,30);
+    fill: #1e1e1e;
     transition: fill 0.1s  ease-in-out, filter 0.1s ;
 }
 .svgStyle a:hover path{
     fill:
-    rgb(32, 186, 190);
+    #20babe;
     
     /* box-shadow: 2px 2px 100px white ; */
 }
