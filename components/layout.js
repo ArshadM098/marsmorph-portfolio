@@ -9,7 +9,7 @@ export default function Layout({children}){
                     <NavButton label="HOME" href="/"></NavButton>
                     <NavButton label="PROJECTS" href="/projects/projectmenu"></NavButton>
                     <NavButton label="ART" href="/art/artmenu"></NavButton>
-                    <NavButton label="MISC" href="/misc/miscmenuy"></NavButton>
+                    <NavButton label="MISC" href="/misc/miscmenu"></NavButton>
                 </div>
                 <div className="
                 relative w-[1400px] h-full
