@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import {MDXProvider} from '@mdx-js/react'
+import "typeface-open-sans";
 const components = {
 }
 
