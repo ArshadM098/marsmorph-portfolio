@@ -1,13 +1,15 @@
-import buttonStyle from "../styles/Base.module.css"
+import Link from 'next/link';
+import buttonStyle from "../styles/Base.module.css";
+
 
 export default function NavButton({label,href}){
   var W= label.length *10 + 50;
   var H= 50;
   var X = 5;
   var d = "M"+ W + " " + H + "H0V" + X + "L" + X + " 0h" + W + "v" + (H-X) + "Z";
-  console.log(d)
+  // console.log(d)
 return (
-    <svg className={buttonStyle.svgStyle} width={W+X+5} height={H} viewBox={"0 0 ${W+X} ${H}"}>
+    <svg className={buttonStyle.svgStyle} width={W+X+5} height={H} >
         <filter id='inset-shadow'>
   <feOffset
     dx='0'
@@ -30,8 +32,8 @@ return (
   
   {/* <!-- Cut color inside shadow --> */}
   <feFlood
-    flood-color='black'
-    flood-opacity='.95'
+    floodColor='black'
+    floodOpacity='.95'
     result='color'
   />
   <feComposite
@@ -48,7 +50,7 @@ return (
     in2='SourceGraphic'
   />
 </filter>
-        <a href={href}>
+        <Link href={href}>
         <g transform="matrix(1, 0, 0, 1, 0, 0)">
           <path d={d}/>
         </g>
@@ -56,12 +58,12 @@ return (
           y={H/2 + 8}
           fontSize="20"
           fill="#FFFFFF"
-          text-anchor="middle"
+          textAnchor="middle"
           // alignment-baseline="middle"
           >
         {label}
         </text>
-        </a>
+        </Link>
     </svg>
 )
 }
