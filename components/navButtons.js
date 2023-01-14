@@ -2,14 +2,18 @@ import Link from 'next/link';
 import buttonStyle from "../styles/Base.module.css";
 
 
-export default function NavButton({label,href}){
+export default function NavButton({label,href,responsive}){
+  var s1 = "self-start"
+  if(responsive === false){
+    s1 = "self-end"
+  }
   var W= label.length *10 + 50;
   var H= 50;
   var X = 5;
   var d = "M"+ W + " " + H + "H0V" + X + "L" + X + " 0h" + W + "v" + (H-X) + "Z";
   // console.log(d)
 return (
-    <svg 
+    <svg className={s1 + " md:self-end"}
      width={W+X+5} height={H} >
         <filter id='inset-shadow'>
   <feOffset
