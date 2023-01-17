@@ -6,7 +6,6 @@ import Link from "next/link";
 
 export async function getStaticProps({ params }) {
     const postData = await getPostData(params.id);
-    console.log(postData);
     return {
       props: {
         postData,
@@ -25,7 +24,7 @@ export default function BlogPage({postData}) {
   <div className="container flex flex-col text-white h-full">
     <NavBar></NavBar>
     <Link href="../../projectMenu" className="mt-24 mx-7  self-end"> &#x2190; Return to previous page</Link>
-    <BlogFormat>{postData}</BlogFormat>
+    <BlogFormat >{postData}</BlogFormat>
   </div>
   )
 }
