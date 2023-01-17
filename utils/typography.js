@@ -12,13 +12,12 @@ GithubTheme.overrideThemeStyles = ({ rhythm }, options) => ({
     },
     h2:{
       textDecoration: 'underline',
-      color: '#80babe',
     },
     p:{
       fontWeight: 100,
     }
   });
-  GithubTheme.scaleRatio = 2;
+  GithubTheme.scaleRatio = 3;
   const typography = new Typography(GithubTheme)
   // Hot reload typography in development.
   if (process.env.NODE_ENV !== `production`) {

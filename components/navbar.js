@@ -1,6 +1,6 @@
 import NavBtns from "./navbtns"
 
-export default function NavBar(){
+export default function NavBar({children}){
     return <>
         <div className="fixed flex justify-around
          border-solid border-white border

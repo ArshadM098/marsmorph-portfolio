@@ -20,7 +20,7 @@ export default function ProjectMenu({allPostsData}){
     <NavBar/>
     <ul className="list-none  mt-24 mx-3">
     {allPostsData.map(({ id,title,description}) => (
-      <li key={id} ><ProjectPreview title={title} desc={description}/></li>
+      <li key={id} ><ProjectPreview title={title} desc={description} href={"projects/blogpages/" + id}/></li>
     ))}
     </ul> 
   </div>

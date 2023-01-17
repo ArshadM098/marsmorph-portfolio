@@ -1,7 +1,9 @@
-import Layout from "../../../components/layout";
+import NavBar from "../../../components/navbar";
 import { getAllPostIds, getPostData  } from "../../../lib/blogs";
 import BlogFormat from "../../../components/blogFormat";
-import matter from "gray-matter";
+import Link from "next/link";
+
+
 export async function getStaticProps({ params }) {
     const postData = await getPostData(params.id);
     console.log(postData);
@@ -19,7 +21,11 @@ export async function getStaticPaths(){
     };
 }
 export default function BlogPage({postData}) {
-    return <Layout>
-        <BlogFormat>{postData}</BlogFormat>
-    </Layout>
+  return (
+  <div className="container flex flex-col text-white h-full">
+    <NavBar></NavBar>
+    <Link href="../../projectMenu" className="mt-24 mx-7  self-end"> &#x2190; Return to previous page</Link>
+    <BlogFormat>{postData}</BlogFormat>
+  </div>
+  )
 }
