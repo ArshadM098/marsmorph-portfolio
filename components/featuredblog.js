@@ -1,5 +1,5 @@
 import SkillTree from "./skilltree"
-import Portrait from "../lib/headshot.jpg"
+import Portrait from "../lib/CyberpunkCat.jpg"
 import Image from "next/image"
 export default function Featured(){
 
