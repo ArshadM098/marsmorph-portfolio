@@ -14,7 +14,7 @@ export default function NavButton({label,href,responsive}){
   // console.log(d)
 return (
     <svg className={s1 + " md:self-end"}
-     width={W+X+5} height={H} >
+     width={W+X} height={H} >
         <filter id='inset-shadow'>
   <feOffset
     dx='0'

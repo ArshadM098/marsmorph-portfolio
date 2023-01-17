@@ -6,6 +6,13 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    colors:{
+      'accent' : '#00DBFF',
+      'accent-fade' : '#182A2D',
+      'dark' : '#0C0C0C',
+      'white' : '#ffffff',
+      'black' : '#000000',
+    }
   },
   plugins: [],
   corePlugins: {

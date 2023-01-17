@@ -15,9 +15,9 @@ export default function Menu({allPostsData}){
     let post = allPostsData.find(x => x.id === index)
     return (
         <div className="flex flex-nowrap justify-start flex-col w-auto relative md:p-[20px] overflow-hidden h-full ">
-            <div className="text-center justify-self-end relative text-6xl uppercase m-0 p-1 align-end mt-[150px]
+            <h1 className="text-center justify-self-end relative text-6xl uppercase m-0 p-1 align-end  
             md:text-[110px] md:h-auto md:mt-auto
-            ">projects</div>
+            ">projects</h1>
             <div className="relative flex flex-row justify-center flex-grow items-stretch my-[20px] h-[7/8] mx-0 md:mx-[50px]">
                 <div className="relative min-w-[300px] w-full md:w-[300px] overflow-auto border-0 md:border-[1px] border-[#808080] border-solid border-r-0">
                     <ul className="
@@ -34,9 +34,10 @@ export default function Menu({allPostsData}){
                         h-auto
                         md:h-[100px]
                         transition-all
+                        text-white
                         hover:text-black
                         hover:bg-white
-                        backdrop-brightness-200
+                        backdrop-brightness-50
                         
                         ">
                             {title}
