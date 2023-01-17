@@ -11,7 +11,6 @@ export async function getStaticProps({ params }) {
       },
     };
   }
-
 export async function getStaticPaths(){
     const paths = getAllPostIds();
     return {
