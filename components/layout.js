@@ -1,5 +1,5 @@
 import NameText from "./nametext"
-import NavButton from "./navButtons"
+import NavButton from "./_navButtons"
 
 export default function Layout({children}){
     return(

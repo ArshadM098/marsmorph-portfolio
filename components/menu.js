@@ -3,7 +3,7 @@ import PreviewLayout from "./previewLayout"
 import React, { useState, useEffect } from 'react';
 import { render } from "react-dom";
 import Link from 'next/link';
-import NavButton from "./navButtons";
+import NavButton from "./_navButtons";
 
 export default function Menu({allPostsData}){
     const [index, setIndex] = useState("p1");

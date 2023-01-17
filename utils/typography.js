@@ -3,7 +3,7 @@ import GithubTheme from "typography-theme-github";
 
 GithubTheme.overrideThemeStyles = ({ rhythm }, options) => ({
     "h1,h2,h3,h4,h5,h6": {
-      marginTop: rhythm(2),
+      marginTop: rhythm(0),
     },
     h1: {
       fontWeight: 900,
@@ -18,7 +18,7 @@ GithubTheme.overrideThemeStyles = ({ rhythm }, options) => ({
       fontWeight: 100,
     }
   });
-  GithubTheme.scaleRatio = 3;
+  GithubTheme.scaleRatio = 2;
   const typography = new Typography(GithubTheme)
   // Hot reload typography in development.
   if (process.env.NODE_ENV !== `production`) {
