@@ -11,7 +11,7 @@ export default function Featured(){
         </div>
         <div className="relative block "><Image src={Portrait} className="object-cover h-[300px] "/></div>
         
-        <div className="relative"><SkillTree/></div>
+        {/* <div className="relative"><SkillTree/></div> */}
     </div>
     </>
 }

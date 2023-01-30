@@ -9,7 +9,7 @@ export default function NavBar({children}){
             <div className=" m-3 mr-0 text-2xl lowercase text-accent">| </div>
             <NavBtns href="/">Home</NavBtns>
             <NavBtns className="max-md:hidden" href="/projectMenu">Projects</NavBtns>
-            <NavBtns className="md:hidden" href="/featuredProject">Projects</NavBtns>
+            <NavBtns className="md:hidden" href="/projects/sample">MDX</NavBtns>
             <NavBtns href="/projectMenu">Art</NavBtns>
             <NavBtns href="/">Misc</NavBtns>
         

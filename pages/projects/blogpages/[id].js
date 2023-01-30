@@ -21,7 +21,7 @@ export async function getStaticPaths(){
 }
 export default function BlogPage({postData}) {
   return (
-  <div className="container flex flex-col text-white h-full">
+  <div className="flex flex-col text-white h-full">
     <NavBar></NavBar>
     <Link href="../../projectMenu" className="mt-24 mx-7  self-end"> &#x2190; Return to previous page</Link>
     <BlogFormat >{postData}</BlogFormat>

@@ -17,13 +17,13 @@ export  function getStaticProps() {
 export default function ProjectMenu({allPostsData}){
 
   return(
-  <div className="container flex flex-col text-white h-full">
+  <div className=" flex flex-col text-white h-full w-full">
     <NavBar/>
     <div className='flex flex-col md:flex-row w-full justify-items-stretch'>
-    <div className='max-md:hidden mt-24 ml-5 h-[650px]'>
+    <div className='max-md:hidden mt-24 ml-5 h-[650px] basis-3/5'>
       <Featured/>
     </div>
-    <ul className="list-none  mt-24 mx-3 overflow-auto h-[650px]">
+    <ul className="list-none  mt-24 mx-3 overflow-auto h-[650px] md:basis-3/5">
     {allPostsData.map(({ id,title,description}) => (
       <li key={id} ><ProjectPreview title={title} desc={description} href={"projects/blogpages/" + id}/></li>
     ))}
