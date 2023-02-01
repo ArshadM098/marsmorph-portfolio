@@ -7,9 +7,9 @@ module.exports = {
   theme: {
     extend: {},
     colors:{
-      'accent' : '#00DBFF',
+      'accent' : '#C5FF00',
       'accent-fade' : '#182A2D',
-      'dark' : '#0C0C0C',
+      'dark' : '#0B1615',
       'white' : '#ffffff',
       'black' : '#000000',
     }
