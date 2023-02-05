@@ -36,15 +36,22 @@ const blogs = [
       body: "This is another body of the email",
       from: "sender2@example.com",
       date: "2022-12-02"
+    },
+    {
+      id: 6,
+      title: "Another important email",
+      body: "This is another body of the email",
+      from: "sender2@example.com",
+      date: "2022-12-02"
     }
 ]
 
 export default function BlogList(){
     return(
-        <list id="list-container" className="flex flex-col gap-5 w-full overflow-scroll flex-wrap ">
+        <div id="list-container" className="absolute flex flex-col h-full overflow-y-scroll gap-5 w-full bot-0 last:mb-32">
             {blogs.map(blog => (
                 <BlogPreview key={blog.id} blog={blog}/>
             ))}
-        </list>
+        </div>
     )
 }

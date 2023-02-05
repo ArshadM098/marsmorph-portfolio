@@ -18,7 +18,7 @@ export default function HamburgerDropdown(){
   }
   return (
     <div className="absolute w-full h-full">
-      <div className={`absolute backdrop-blur-lg z-40
+      <div className={`absolute backdrop-blur-lg z-40 backdrop-grayscale backdrop-brightness-[0.25]
       right-0 py-20 w-full h-full transform origin-top-left ${showDropdown ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'} transition-opacity`}>
         <NavBtns>Home</NavBtns>
         <NavBtns>Ideas</NavBtns>

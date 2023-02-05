@@ -9,12 +9,12 @@ export default function Sidebar(){
     const [showDropdown, setShowDropdown] = useState(false);
     
     return (
-      <div className="absolute w-full h-full z-30">
+      <div className="absolute w-full h-full">
         <Image
         onClick={() => setShowDropdown(!showDropdown)}
         src={PFbtn}
-        className="absolute object-contain right-0 m-4 h-8 w-8 z-50 border-none"/>
-        <div className={`absolute bg-black flex flex-col items-center
+        className="absolute object-contain right-0 m-4 h-8 w-8 z-40 border-none"/>
+        <div className={`absolute bg-black flex flex-col items-center z-30
         bottom-0 py-2 w-full h-3/5 transform origin-top-right ${showDropdown ? 'translate-y-0' : 'translate-y-full'} transition-all`}>
           <Image onClick={() => setShowDropdown(false)} src={Exit} className="active:bg-accent object-contain self-end mr-4 mt-2 m-0 w-8"/>
           <Image src={PFP} className="object-contain w-3/5 mt-0"/>

@@ -9,7 +9,7 @@ module.exports = {
     colors:{
       'accent' : '#C5FF00',
       'accent-fade' : '#182A2D',
-      'dark' : '#0B1615',
+      'dark' : '#00191f',
       'white' : '#ffffff',
       'black' : '#000000',
     }
