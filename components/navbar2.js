@@ -18,7 +18,7 @@ export default function HamburgerDropdown(){
   }
   return (
     <div className="absolute w-full h-full">
-      <div className={`absolute backdrop-blur-lg z-20
+      <div className={`absolute backdrop-blur-lg z-40
       right-0 py-20 w-full h-full transform origin-top-left ${showDropdown ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'} transition-opacity`}>
         <NavBtns>Home</NavBtns>
         <NavBtns>Ideas</NavBtns>
@@ -27,7 +27,7 @@ export default function HamburgerDropdown(){
       <Image key={y}
         onClick={() => {setShowDropdown(!showDropdown);handleClick()}}
         src={y}
-        className="absolute object-contain m-4 h-8 w-8 z-30 border-none"/>
+        className="absolute object-contain m-4 h-8 w-8 z-40 border-none"/>
     </div>
   );
 };
