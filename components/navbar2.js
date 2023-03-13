@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useState } from "react";
 import NavIco from "../button_icons/navham.png"
 import NavIco_Open from "../button_icons/navham_open.png"
-import Image from 'next/Image'
+import Image from "next/image"
 
 export default function HamburgerDropdown(){
   const [showDropdown, setShowDropdown] = useState(false);

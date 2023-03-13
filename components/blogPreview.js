@@ -6,7 +6,7 @@ export default function BlogPreview({blog}){
     const [fill, setFill] = useState('#40403f');
     console.log(blog);
     return (
-        <div id="main-container" className="relative w-full bg-black text-white">
+        <div id="main-container" className="relative w-full bg-black text-white max-w-lg">
             <div id="blog-title" className=" w-7/12 top-0 left-0 m-5 my-10 block text-3xl">{blog.id}</div>
             {/* <div id="blog-date" className="absolute mt-2 top-0 right-0 mr-3"></div> */}
             <LinkBar
