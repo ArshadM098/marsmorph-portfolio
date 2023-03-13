@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useState } from "react";
 import NavIco from "../button_icons/navham.png"
 import NavIco_Open from "../button_icons/navham_open.png"
-import Image from 'next/Image'
+import Image from "next/image"
 
 export default function HamburgerDropdown(){
   const [showDropdown, setShowDropdown] = useState(false);
@@ -18,11 +18,11 @@ export default function HamburgerDropdown(){
   }
   return (
     <div className="absolute w-full h-full">
-      <div className={`absolute backdrop-blur-lg z-40
+      <div className={`absolute backdrop-blur-lg z-40 backdrop-grayscale backdrop-brightness-[0.25]
       right-0 py-20 w-full h-full transform origin-top-left ${showDropdown ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'} transition-opacity`}>
-        <NavBtns>Home</NavBtns>
-        <NavBtns>Ideas</NavBtns>
-        <NavBtns>Resume</NavBtns>
+        <NavBtns link="/">Home</NavBtns>
+        <NavBtns link="/ideas">Ideas</NavBtns>
+        <NavBtns link="/">Resume</NavBtns>
       </div>
       <Image key={y}
         onClick={() => {setShowDropdown(!showDropdown);handleClick()}}

@@ -1,0 +1,24 @@
+import Layout from '../../../components/layout.js'
+
+
+export const metadata = {
+  title: "Next.js with MDX + dynamic routes + metadata",
+  date: "2020-07-03",
+}
+
+
+<div class="text-white">
+
+# My MDX page
+
+This is a list in markdown:
+
+- One
+- Two
+- Three
+
+Checkout my React component:
+
+</div>
+
+export default ({children}) => <Layout title='Blog'>{children}</Layout>
