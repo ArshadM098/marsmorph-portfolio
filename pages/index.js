@@ -7,7 +7,7 @@ export default function Home() {
                 <rect id="Rectangle_5" data-name="Rectangle 5" width="167" height="68" fill="#006e45"/>
             </svg>
                 <p className="uppercase text-6xl font-semibold">Marsmorph</p>
-                <p className="text-lg ml-1">A Generalist's Journal</p>
+                <p className="text-lg ml-1">A Generalist's J0urnal</p>
             </div>
         </Layout>
     )
