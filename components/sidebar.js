@@ -5,6 +5,7 @@ import Exit from "../button_icons/exit.png"
 import PFbtn from "../button_icons/profilebtn.png"
 import Image from 'next/image'
 
+
 export default function Sidebar(){
     const [showDropdown, setShowDropdown] = useState(false);
     
