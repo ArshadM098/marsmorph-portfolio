@@ -21,11 +21,14 @@
     "react-transition-group": "^4.4.5",
     "react-typography": "^0.16.23",
     "remark": "^14.0.2",
+    "remark-frontmatter": "^4.0.1",
     "remark-html": "^15.0.1",
+    "remark-mdx-frontmatter": "^2.1.1",
     "typeface-merriweather": "^1.1.13",
     "typeface-open-sans": "^1.1.13",
     "typography": "^0.16.21",
-    "typography-theme-github": "^0.16.19"
+    "typography-theme-github": "^0.16.19",
+    "yaml": "^2.2.1"
   },
   "browser": {
     "fs": false,

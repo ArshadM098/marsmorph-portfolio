@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 
 export default function BlogPreview({blog}){
@@ -6,9 +7,10 @@ export default function BlogPreview({blog}){
     console.log(blog);
     return (
         <div id="main-container" className="relative w-full bg-black text-white">
-            <div id="blog-title" className=" w-7/12 top-0 left-0 m-5 my-10 block text-3xl">{blog.meta.title}</div>
-            <div id="blog-date" className="absolute mt-2 top-0 right-0 mr-3">{blog.meta.date}</div>
-            <LinkBar 
+            <div id="blog-title" className=" w-7/12 top-0 left-0 m-5 my-10 block text-3xl">{blog.id}</div>
+            {/* <div id="blog-date" className="absolute mt-2 top-0 right-0 mr-3"></div> */}
+            <LinkBar
+                link={`./projects/mdx/${blog.id}`}
                 className={`hover:cursor-pointer absolute bottom-0 w-full m-0 border-white border-0 border-solid`}
                 fillColor={fill}
                 setFill={setFill}
@@ -20,10 +22,11 @@ export default function BlogPreview({blog}){
     )
 }
 
-const LinkBar = ({ className, fillColor, setFill }) => {
+const LinkBar = ({ className, fillColor, setFill, link }) => {
     var width = 414;
     var height = 30;
     return (
+        <Link href={link}>
         <svg className={`${className}`} viewBox={`0 0 ${width} ${height}`} onMouseLeave={() => setFill('#40403f')} onMouseEnter={() => setFill('#c5ff00')}>
             <path d={`M${width} ${height}H0v-5.759h367.127L388.854 0H${width}v${height}Zm-25.5-15.829a.982.982 0 0 0-1 .96.982.982
                 0 0 0 1 .959h6.883v4.187a.956.956
@@ -40,5 +43,6 @@ const LinkBar = ({ className, fillColor, setFill }) => {
                             fill={fillColor}
             />
         </svg>
+        </Link>
     );
   };
